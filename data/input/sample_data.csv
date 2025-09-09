@@ -1,0 +1,6 @@
+first_name,last_name,email_address,phone,birth_date,department,salary,status
+John,Doe,john.doe@email.com,555-123-4567,15/03/1985,Engineering,75000,active
+Jane,Smith,jane.smith@email.com,555-987-6543,22/07/1990,Marketing,65000,active
+Bob,Johnson,bob.johnson@email.com,555-456-7890,08/11/1988,Sales,70000,inactive
+Alice,Williams,alice.williams@email.com,555-234-5678,12/01/1992,Engineering,80000,active
+Charlie,Brown,charlie.brown@email.com,555-345-6789,30/09/1987,Marketing,60000,active

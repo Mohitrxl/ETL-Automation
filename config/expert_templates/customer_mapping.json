@@ -1,0 +1,45 @@
+{
+  "column_mappings": {
+    "first_name": "fname",
+    "last_name": "lname",
+    "email_address": "email",
+    "birth_date": "dob"
+  },
+  "transformations": {
+    "fname": {
+      "type": "uppercase",
+      "params": {}
+    },
+    "lname": {
+      "type": "uppercase", 
+      "params": {}
+    },
+    "email": {
+      "type": "lowercase",
+      "params": {}
+    },
+    "dob": {
+      "type": "date_format",
+      "params": {
+        "input_format": "%d/%m/%Y",
+        "output_format": "%Y-%m-%d"
+      }
+    }
+  },
+  "filters": {
+    "active_employees": "status == 'active'",
+    "valid_email": "email.str.contains('@')"
+  },
+  "data_quality": {
+    "business_rules": {
+      "email_format": {
+        "condition": "email.str.contains('@')",
+        "description": "Email must contain @ symbol"
+      },
+      "salary_positive": {
+        "condition": "salary > 0", 
+        "description": "Salary must be positive"
+      }
+    }
+  }
+}
